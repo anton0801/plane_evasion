@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE868FB22C36CF510009FC4B /* Plane_EvasionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FB12C36CF510009FC4B /* Plane_EvasionApp.swift */; };
+		EE868FB42C36CF510009FC4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FB32C36CF510009FC4B /* ContentView.swift */; };
+		EE868FB62C36CF530009FC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE868FB52C36CF530009FC4B /* Assets.xcassets */; };
+		EE868FB92C36CF530009FC4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE868FB82C36CF530009FC4B /* Preview Assets.xcassets */; };
+		EE868FC52C36D7B10009FC4B /* MView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FC42C36D7B10009FC4B /* MView.swift */; };
+		EE868FCA2C371BAC0009FC4B /* GameBattleEnvasionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FC92C371BAC0009FC4B /* GameBattleEnvasionScene.swift */; };
+		EE868FCD2C37246F0009FC4B /* fire_audio.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE868FCC2C37246F0009FC4B /* fire_audio.wav */; };
+		EE868FCF2C37248E0009FC4B /* DEFEAT.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE868FCE2C37248E0009FC4B /* DEFEAT.wav */; };
+		EE868FD12C3724930009FC4B /* VICTORY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE868FD02C3724930009FC4B /* VICTORY.mp3 */; };
+		EE868FD32C3724980009FC4B /* back_m.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE868FD22C3724980009FC4B /* back_m.wav */; };
+		EE868FD52C372C400009FC4B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FD42C372C400009FC4B /* Common.swift */; };
+		EE868FD72C37312B0009FC4B /* IrishGrover-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE868FD62C37312B0009FC4B /* IrishGrover-Regular.ttf */; };
+		EE868FDA2C373CF90009FC4B /* PauseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FD92C373CF90009FC4B /* PauseNode.swift */; };
+		EE868FDD2C37EB8B0009FC4B /* EvasionStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FDC2C37EB8B0009FC4B /* EvasionStagesView.swift */; };
+		EE868FDF2C37EDAE0009FC4B /* EvasionStagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FDE2C37EDAE0009FC4B /* EvasionStagesManager.swift */; };
+		EE868FE12C37EDC00009FC4B /* EvasionStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FE02C37EDC00009FC4B /* EvasionStage.swift */; };
+		EE868FE32C37EF850009FC4B /* EvasionGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FE22C37EF850009FC4B /* EvasionGameView.swift */; };
+		EE868FE72C3800E00009FC4B /* WorkShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FE62C3800E00009FC4B /* WorkShop.swift */; };
+		EE868FEA2C380EC50009FC4B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FE92C380EC50009FC4B /* Shop.swift */; };
+		EE868FEC2C3822660009FC4B /* WinBattleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FEB2C3822660009FC4B /* WinBattleGameView.swift */; };
+		EE868FEE2C3824360009FC4B /* BattleOverGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868FED2C3824360009FC4B /* BattleOverGameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE868FAE2C36CF510009FC4B /* Plane Evasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plane Evasion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE868FB12C36CF510009FC4B /* Plane_EvasionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane_EvasionApp.swift; sourceTree = "<group>"; };
+		EE868FB32C36CF510009FC4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE868FB52C36CF530009FC4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE868FB82C36CF530009FC4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE868FC42C36D7B10009FC4B /* MView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MView.swift; sourceTree = "<group>"; };
+		EE868FC92C371BAC0009FC4B /* GameBattleEnvasionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBattleEnvasionScene.swift; sourceTree = "<group>"; };
+		EE868FCC2C37246F0009FC4B /* fire_audio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire_audio.wav; sourceTree = "<group>"; };
+		EE868FCE2C37248E0009FC4B /* DEFEAT.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DEFEAT.wav; sourceTree = "<group>"; };
+		EE868FD02C3724930009FC4B /* VICTORY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VICTORY.mp3; sourceTree = "<group>"; };
+		EE868FD22C3724980009FC4B /* back_m.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = back_m.wav; sourceTree = "<group>"; };
+		EE868FD42C372C400009FC4B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		EE868FD62C37312B0009FC4B /* IrishGrover-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IrishGrover-Regular.ttf"; sourceTree = "<group>"; };
+		EE868FD82C37313B0009FC4B /* Plane-Evasion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Plane-Evasion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EE868FD92C373CF90009FC4B /* PauseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseNode.swift; sourceTree = "<group>"; };
+		EE868FDC2C37EB8B0009FC4B /* EvasionStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasionStagesView.swift; sourceTree = "<group>"; };
+		EE868FDE2C37EDAE0009FC4B /* EvasionStagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasionStagesManager.swift; sourceTree = "<group>"; };
+		EE868FE02C37EDC00009FC4B /* EvasionStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasionStage.swift; sourceTree = "<group>"; };
+		EE868FE22C37EF850009FC4B /* EvasionGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasionGameView.swift; sourceTree = "<group>"; };
+		EE868FE62C3800E00009FC4B /* WorkShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkShop.swift; sourceTree = "<group>"; };
+		EE868FE92C380EC50009FC4B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		EE868FEB2C3822660009FC4B /* WinBattleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinBattleGameView.swift; sourceTree = "<group>"; };
+		EE868FED2C3824360009FC4B /* BattleOverGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleOverGameView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE868FAB2C36CF510009FC4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE868FA52C36CF510009FC4B = {
+			isa = PBXGroup;
+			children = (
+				EE868FB02C36CF510009FC4B /* Plane Evasion */,
+				EE868FAF2C36CF510009FC4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE868FAF2C36CF510009FC4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FAE2C36CF510009FC4B /* Plane Evasion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE868FB02C36CF510009FC4B /* Plane Evasion */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FD82C37313B0009FC4B /* Plane-Evasion-Info.plist */,
+				EE868FD62C37312B0009FC4B /* IrishGrover-Regular.ttf */,
+				EE868FCB2C37245E0009FC4B /* Audio */,
+				EE868FBF2C36D2170009FC4B /* Evasions */,
+				EE868FB12C36CF510009FC4B /* Plane_EvasionApp.swift */,
+				EE868FB32C36CF510009FC4B /* ContentView.swift */,
+				EE868FB52C36CF530009FC4B /* Assets.xcassets */,
+				EE868FB72C36CF530009FC4B /* Preview Content */,
+			);
+			path = "Plane Evasion";
+			sourceTree = "<group>";
+		};
+		EE868FB72C36CF530009FC4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FB82C36CF530009FC4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE868FBF2C36D2170009FC4B /* Evasions */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FE82C380EB20009FC4B /* Shop */,
+				EE868FE52C3800D20009FC4B /* WorkShop */,
+				EE868FDB2C37EB790009FC4B /* L */,
+				EE868FC62C371B440009FC4B /* G */,
+				EE868FC02C36D7320009FC4B /* M */,
+			);
+			path = Evasions;
+			sourceTree = "<group>";
+		};
+		EE868FC02C36D7320009FC4B /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FC32C36D74F0009FC4B /* VM */,
+				EE868FC22C36D74B0009FC4B /* C */,
+				EE868FC12C36D7430009FC4B /* V */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EE868FC12C36D7430009FC4B /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FC42C36D7B10009FC4B /* MView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EE868FC22C36D74B0009FC4B /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		EE868FC32C36D74F0009FC4B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EE868FC62C371B440009FC4B /* G */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FC82C371B510009FC4B /* S */,
+				EE868FC72C371B490009FC4B /* V */,
+			);
+			path = G;
+			sourceTree = "<group>";
+		};
+		EE868FC72C371B490009FC4B /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FE22C37EF850009FC4B /* EvasionGameView.swift */,
+				EE868FEB2C3822660009FC4B /* WinBattleGameView.swift */,
+				EE868FED2C3824360009FC4B /* BattleOverGameView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EE868FC82C371B510009FC4B /* S */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FC92C371BAC0009FC4B /* GameBattleEnvasionScene.swift */,
+				EE868FD42C372C400009FC4B /* Common.swift */,
+				EE868FD92C373CF90009FC4B /* PauseNode.swift */,
+			);
+			path = S;
+			sourceTree = "<group>";
+		};
+		EE868FCB2C37245E0009FC4B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FCC2C37246F0009FC4B /* fire_audio.wav */,
+				EE868FCE2C37248E0009FC4B /* DEFEAT.wav */,
+				EE868FD02C3724930009FC4B /* VICTORY.mp3 */,
+				EE868FD22C3724980009FC4B /* back_m.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		EE868FDB2C37EB790009FC4B /* L */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FDC2C37EB8B0009FC4B /* EvasionStagesView.swift */,
+				EE868FDE2C37EDAE0009FC4B /* EvasionStagesManager.swift */,
+				EE868FE02C37EDC00009FC4B /* EvasionStage.swift */,
+			);
+			path = L;
+			sourceTree = "<group>";
+		};
+		EE868FE52C3800D20009FC4B /* WorkShop */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FE62C3800E00009FC4B /* WorkShop.swift */,
+			);
+			path = WorkShop;
+			sourceTree = "<group>";
+		};
+		EE868FE82C380EB20009FC4B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				EE868FE92C380EC50009FC4B /* Shop.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE868FAD2C36CF510009FC4B /* Plane Evasion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE868FBC2C36CF530009FC4B /* Build configuration list for PBXNativeTarget "Plane Evasion" */;
+			buildPhases = (
+				EE868FAA2C36CF510009FC4B /* Sources */,
+				EE868FAB2C36CF510009FC4B /* Frameworks */,
+				EE868FAC2C36CF510009FC4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plane Evasion";
+			productName = "Plane Evasion";
+			productReference = EE868FAE2C36CF510009FC4B /* Plane Evasion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE868FA62C36CF510009FC4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					EE868FAD2C36CF510009FC4B = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = EE868FA92C36CF510009FC4B /* Build configuration list for PBXProject "Plane Evasion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE868FA52C36CF510009FC4B;
+			productRefGroup = EE868FAF2C36CF510009FC4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE868FAD2C36CF510009FC4B /* Plane Evasion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE868FAC2C36CF510009FC4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE868FD32C3724980009FC4B /* back_m.wav in Resources */,
+				EE868FCD2C37246F0009FC4B /* fire_audio.wav in Resources */,
+				EE868FD72C37312B0009FC4B /* IrishGrover-Regular.ttf in Resources */,
+				EE868FB92C36CF530009FC4B /* Preview Assets.xcassets in Resources */,
+				EE868FB62C36CF530009FC4B /* Assets.xcassets in Resources */,
+				EE868FD12C3724930009FC4B /* VICTORY.mp3 in Resources */,
+				EE868FCF2C37248E0009FC4B /* DEFEAT.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE868FAA2C36CF510009FC4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE868FC52C36D7B10009FC4B /* MView.swift in Sources */,
+				EE868FB42C36CF510009FC4B /* ContentView.swift in Sources */,
+				EE868FE12C37EDC00009FC4B /* EvasionStage.swift in Sources */,
+				EE868FEC2C3822660009FC4B /* WinBattleGameView.swift in Sources */,
+				EE868FEA2C380EC50009FC4B /* Shop.swift in Sources */,
+				EE868FDA2C373CF90009FC4B /* PauseNode.swift in Sources */,
+				EE868FB22C36CF510009FC4B /* Plane_EvasionApp.swift in Sources */,
+				EE868FDF2C37EDAE0009FC4B /* EvasionStagesManager.swift in Sources */,
+				EE868FD52C372C400009FC4B /* Common.swift in Sources */,
+				EE868FE72C3800E00009FC4B /* WorkShop.swift in Sources */,
+				EE868FEE2C3824360009FC4B /* BattleOverGameView.swift in Sources */,
+				EE868FCA2C371BAC0009FC4B /* GameBattleEnvasionScene.swift in Sources */,
+				EE868FE32C37EF850009FC4B /* EvasionGameView.swift in Sources */,
+				EE868FDD2C37EB8B0009FC4B /* EvasionStagesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE868FBA2C36CF530009FC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE868FBB2C36CF530009FC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE868FBD2C36CF530009FC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plane Evasion/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plane-Evasion-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamenation.Plane-Evasion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE868FBE2C36CF530009FC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plane Evasion/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plane-Evasion-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamenation.Plane-Evasion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE868FA92C36CF510009FC4B /* Build configuration list for PBXProject "Plane Evasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE868FBA2C36CF530009FC4B /* Debug */,
+				EE868FBB2C36CF530009FC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE868FBC2C36CF530009FC4B /* Build configuration list for PBXNativeTarget "Plane Evasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE868FBD2C36CF530009FC4B /* Debug */,
+				EE868FBE2C36CF530009FC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE868FA62C36CF510009FC4B /* Project object */;
+}
